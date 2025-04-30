@@ -1,0 +1,5 @@
+**/.venv
+**/__pycache__/
+**/secrets.toml
+tmp.json
+**/.DS_Store

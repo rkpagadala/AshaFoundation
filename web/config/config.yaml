@@ -1,0 +1,6 @@
+app:
+  title: "Asha Grant Analysis 📊"
+  subtitle: "A data-driven visualization of [Asha Education](https://ashanet.org/) Grant year wise"
+  theme: "light"
+data:
+  source: "data/example_data.csv"
