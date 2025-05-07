@@ -156,6 +156,7 @@ pid,month,year,chapter,currency,amount
 25,Nov,1998,Seattle,USD,6000
 26,Dec,2002,Yale,USD,2000
 26,Dec,1998,Indiana,USD,2000
+27,May,2025,Seattle,USD,86283
 27,May,2024,Seattle,USD,87121
 27,Aug,2023,Seattle,USD,976
 27,Apr,2023,Seattle,USD,88499
@@ -3488,7 +3489,7 @@ pid,month,year,chapter,currency,amount
 549,Dec,2005,Seattle,USD,27000
 553,Dec,2005,Seattle,USD,14400
 554,Dec,2005,Seattle,USD,3001
-555,Apr,2025,Chennai,USD,21811
+555,Apr,2025,Chennai,USD,21735
 555,Sep,2024,Chennai,USD,111141
 555,Jul,2024,Chennai,INR,600000
 555,Apr,2024,Chennai,USD,18659
@@ -5052,6 +5053,7 @@ pid,month,year,chapter,currency,amount
 787,Oct,2008,Seattle,USD,2892
 787,Dec,2005,Seattle,USD,5000
 787,Dec,2004,Seattle,USD,4200
+788,Apr,2025,Bangalore,USD,16430
 788,Mar,2025,Bangalore,USD,5387
 788,Sep,2024,NYC/NJ,USD,26073
 788,Sep,2024,Bangalore,USD,6379
