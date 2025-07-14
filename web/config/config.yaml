@@ -1,5 +1,5 @@
 app:
-  title: "Asha Grant Analysis 📊       \n The actual data is broken right now, the UI remains unchanged"
+  title: "Asha Grant Analysis 📊       The actual data is broken right now, the UI remains unchanged"
   subtitle: "A data-driven visualization of [Asha Education](https://ashanet.org/) Grant year wise"
   theme: "light"
 data:
