@@ -10,40 +10,6 @@ from streamlit_echarts import st_echarts
 # Add debugging info at the top
 st.set_page_config(page_title="Asha Foundation Funding Analysis", page_icon=":bar_chart:", layout="wide")
 
-# Debug section
-with st.expander("Debug Info", expanded=True):
-    st.write(f"Current working directory: {os.getcwd()}")
-    st.write(f"__file__: {__file__}")
-    st.write(f"Script directory: {os.path.dirname(os.path.abspath(__file__))}")
-    
-    # List directories
-    st.write("### Directory Structure:")
-    if os.path.exists('/mount/src/ashafoundation'):
-        st.write("Files in /mount/src/ashafoundation:")
-        st.write(os.listdir('/mount/src/ashafoundation'))
-        
-        if os.path.exists('/mount/src/ashafoundation/web'):
-            st.write("Files in /mount/src/ashafoundation/web:")
-            st.write(os.listdir('/mount/src/ashafoundation/web'))
-            
-            if os.path.exists('/mount/src/ashafoundation/web/config'):
-                st.write("Files in /mount/src/ashafoundation/web/config:")
-                st.write(os.listdir('/mount/src/ashafoundation/web/config'))
-    
-    # Check for DataCSV
-    st.write("### Data Directory Check:")
-    possible_data_dirs = [
-        os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'DataCSV'),
-        '/mount/src/ashafoundation/DataCSV',
-        '../DataCSV',
-        'DataCSV'
-    ]
-    
-    for dir_path in possible_data_dirs:
-        st.write(f"Checking {dir_path}: {os.path.exists(dir_path)}")
-        if os.path.exists(dir_path):
-            st.write(f"Contents: {os.listdir(dir_path)}")
-
 # Get the directory where the script is located
 script_dir = os.path.dirname(os.path.abspath(__file__))
 
