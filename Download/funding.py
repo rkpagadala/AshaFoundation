@@ -2,15 +2,17 @@ import os
 import requests
 import re 
 from bs4 import BeautifulSoup
+import time 
 
-
+sleep_time : float = 0.1
 def download_data(pid):
     print(f"Downloading data for project {pid}")
     url = f"https://ashanet.org/project/?pid={pid}"
     response = requests.get(url)
+    time.sleep(sleep_time)
     return response.text
 
-# download and save data for 1 to last project(i.e 1353)
+# download and save data for 1 to last project
 def download_all_data():
     i=1
     while True:
