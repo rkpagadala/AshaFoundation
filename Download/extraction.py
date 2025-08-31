@@ -1,10 +1,15 @@
-from bs4 import BeautifulSoup
+try:
+    from bs4 import BeautifulSoup
+except ImportError:
+    BeautifulSoup = None
 import re
 import polars as pl
 
 def read_and_analyze(i):
     try:
         with open(f"Download/HTML_DATA/ashasup_{i}.html", "r") as f:
+            if BeautifulSoup is None:
+                return None
             soup = BeautifulSoup(f.read(), 'html.parser')
             if not soup.find_all('div', {"class": "x-accordion-inner"}):
                 return None
@@ -294,37 +299,60 @@ def per_pop_year_state():
     joined_df     = percentage_year_state_df.join(population_df, on='state', how='left')
     joined_df     = joined_df.sort(['state','year'])
     joined_df.write_csv('DataCSV/per_pop_year_state.csv')
-    
+
 def bimaru():
-    #population_df = pl.read_csv('DataCSV/population.csv')
-    per_pop_state_year_chapter_df = pl.read_csv('DataCSV/per_population_state_year_chapter.csv')
-    
+    # Build BIMARU aggregates from per_population_state_year_chapter.csv
+    base_df = pl.read_csv('DataCSV/per_population_state_year_chapter.csv')
     bimaru_states = ['BIHAR', 'JHARKHAND', 'MADHYA PRADESH', 'CHHATTISGARH', 'RAJASTHAN', 'UTTAR PRADESH', 'UTTARAKHAND']
-    bimaru_df     = per_pop_state_year_chapter_df.filter(pl.col('state').is_in(bimaru_states))
-    bimaru_df     = bimaru_df.with_columns([
-                    pl.col('Population').cast(pl.Int64),
-                ])
-    bimaru_population = bimaru_df['Population'].unique().sum()
-    bimaru_percentage = bimaru_df['% of Total'].unique().sum()
-    bimaru_chapter_amount = bimaru_df['chapter_amount'].sum()
-    # bimaru_state_total_amount = bimaru_df['state_total_amount'].sum()
-    
-    per_pop_state_year_chapter_df = per_pop_state_year_chapter_df.with_columns([
-        (pl.when(pl.col("state").is_in(bimaru_states)).then(pl.lit("Bimaru")).otherwise(pl.col("state")).alias("state")),
-        (pl.when(pl.col("state").is_in(bimaru_states)).then(pl.lit(bimaru_population)).otherwise(pl.col("Population")).alias("Population")),
-        (pl.when(pl.col("state").is_in(bimaru_states)).then(pl.lit(bimaru_percentage)).otherwise(pl.col("% of Total")).alias("% of Total")),
-        (pl.when(pl.col("state").is_in(bimaru_states)).then(pl.lit(bimaru_chapter_amount)).otherwise(pl.col("chapter_amount")).alias("chapter_amount")),
-       # (pl.when(pl.col("state").is_in(bimaru_states)).then(pl.lit(bimaru_state_total_amount)).otherwise(pl.col("state_total_amount")).alias("state_total_amount")),
+
+    # Total amount per (year, chapter) across all states
+    if 'chapter_amount' in base_df.columns:
+        totals = base_df.group_by(['year', 'chapter']).agg(
+            pl.col('chapter_amount').sum().alias('total_amount')
+        )
+    else:
+        # Fallback if chapter_amount is not available
+        totals = base_df.group_by(['year', 'chapter']).agg(
+            pl.col('state_total_amount').sum().alias('total_amount')
+        )
+
+    # BIMARU population share once (constant over time)
+    population_df = pl.read_csv('DataCSV/population.csv').with_columns([
+        pl.col('state').cast(pl.String)
     ])
-    per_pop_state_year_chapter_df = per_pop_state_year_chapter_df.with_columns([
-        (pl.col('state_total_amount')/pl.col('% of Total')).alias('state_total_amount_per_capita'),
+    bimaru_pop_pct = population_df.filter(pl.col('state').is_in(bimaru_states))['% of Total'].sum()
+
+    # Aggregate BIMARU chapter amounts per (year, chapter)
+    if 'chapter_amount' in base_df.columns:
+        bimaru_chapter = base_df.filter(pl.col('state').is_in(bimaru_states)).group_by(['year', 'chapter']).agg([
+            pl.col('chapter_amount').sum().alias('state_total_amount')
+        ])
+    else:
+        bimaru_chapter = base_df.filter(pl.col('state').is_in(bimaru_states)).group_by(['year', 'chapter']).agg([
+            pl.col('state_total_amount').sum().alias('state_total_amount')
+        ])
+    bimaru_chapter = bimaru_chapter.join(totals, on=['year', 'chapter'], how='left')
+    # compute state_percentage first
+    bimaru_chapter = bimaru_chapter.with_columns([
+        (pl.when(pl.col('total_amount') != 0)
+         .then(pl.col('state_total_amount') / pl.col('total_amount') * 100)
+         .otherwise(None)).alias('state_percentage'),
+        pl.lit('BIMARU').alias('state')
     ])
-    
-    per_pop_state_year_chapter_df.write_csv('DataCSV/bimaru.csv')
+    # then compute pop_adj_units to avoid referencing a new column in the same call
+    bimaru_chapter = bimaru_chapter.with_columns([
+        (pl.when(pl.lit(bimaru_pop_pct) != 0)
+         .then(pl.col('state_percentage') / pl.lit(bimaru_pop_pct))
+         .otherwise(None)).alias('pop_adj_units')
+    ])
+
+    bimaru_out = bimaru_chapter.select(['state', 'chapter', 'year', 'state_total_amount', 'total_amount', 'state_percentage', 'pop_adj_units']).sort(['state', 'year', 'chapter'])
+    bimaru_out.write_csv('DataCSV/bimaru.csv')
     
     
 def create_per_population_state_chapter_year(input_path='DataCSV/per_population_state_year_chapter.csv', output_path='DataCSV/per_population_state_chapter_year.csv'):
     """
+    ppsyc as input and ppscy as output
     Generate per_population_state_chapter_year.csv in DataCSV directory using per_population_state_year_chapter.csv as input.
     Ensures columns: state, chapter, year, state_total_amount, total_amount, state_percentage, pop_adj_units.
     Calculates missing columns as needed.
@@ -345,43 +373,55 @@ def _add_all_chapters_and_bimaru(df):
         'state_percentage',
         'pop_adj_units'
     ]
-    # Ensure state_total_amount exists (should be present)
-    if 'state_total_amount' not in df.columns:
-        raise ValueError('state_total_amount column is required in input')
-    # total_amount: sum for (year, chapter)
-    if 'total_amount' not in df.columns:
-        df = df.with_columns([
-            pl.col('state_total_amount').sum().over(['year', 'chapter']).alias('total_amount')
+
+    # Determine the per-(state,year,chapter) amount column to use
+    # Prefer 'chapter_amount' if present; otherwise, assume 'state_total_amount' represents per-chapter rows
+    if 'chapter_amount' in df.columns:
+        working = df.with_columns([
+            pl.col('chapter_amount').alias('_state_amount')
         ])
-    # state_percentage: (state_total_amount / total_amount) * 100
-    if 'state_percentage' not in df.columns:
-        df = df.with_columns([
-            (pl.col('state_total_amount') / pl.col('total_amount') * 100).alias('state_percentage')
+    else:
+        working = df.with_columns([
+            pl.col('state_total_amount').alias('_state_amount')
         ])
-    # pop_adj_units: (state_percentage / % of Total) if % of Total exists
-    if 'pop_adj_units' not in df.columns:
-        if '% of Total' in df.columns:
-            df = df.with_columns([
-                (pl.col('state_percentage') / pl.when(pl.col('% of Total') != 0).then(pl.col('% of Total')).otherwise(None)).alias('pop_adj_units')
-            ])
-        else:
-            df = df.with_columns([
-                pl.lit(None).alias('pop_adj_units')
-            ])
-    # --- Add All Chapters rows ---
-    group_cols = ['state', 'year']
-    agg_dict = {
-        'state_total_amount': pl.col('state_total_amount').sum(),
-        'total_amount': pl.col('total_amount').sum(),
-    }
-    if '% of Total' in df.columns:
-        agg_dict['% of Total'] = pl.col('% of Total').max()
-    all_chapters = df.group_by(group_cols).agg(**agg_dict)
-    all_chapters = all_chapters.with_columns([
-        pl.lit('All Chapters').alias('chapter'),
-        (pl.col('state_total_amount') / pl.col('total_amount') * 100).alias('state_percentage')
+
+    # Recompute total_amount per (year, chapter) to avoid double counting
+    working = working.with_columns([
+        pl.col('_state_amount').sum().over(['year', 'chapter']).alias('total_amount')
     ])
-    if '% of Total' in df.columns:
+
+    # Recompute state_percentage based on the corrected totals
+    working = working.with_columns([
+        (pl.when(pl.col('total_amount') != 0).then(pl.col('_state_amount') / pl.col('total_amount') * 100).otherwise(None)).alias('state_percentage')
+    ])
+
+    # Compute pop-adjusted units if population share exists
+    if '% of Total' in working.columns:
+        working = working.with_columns([
+            (pl.col('state_percentage') / pl.when(pl.col('% of Total') != 0).then(pl.col('% of Total')).otherwise(None)).alias('pop_adj_units')
+        ])
+    else:
+        working = working.with_columns([
+            pl.lit(None).alias('pop_adj_units')
+        ])
+
+    # Build All Chapters rows (sum across chapters for each state-year)
+    agg_dict = {
+        'state_total_amount': pl.col('_state_amount').sum(),
+    }
+    if '% of Total' in working.columns:
+        agg_dict['% of Total'] = pl.col('% of Total').max()
+    all_chapters = working.group_by(['state', 'year']).agg(**agg_dict).with_columns([
+        pl.lit('All Chapters').alias('chapter')
+    ])
+    # Year-level totals across states (for All Chapters rows)
+    year_totals = all_chapters.group_by('year').agg([
+        pl.col('state_total_amount').sum().alias('total_amount')
+    ])
+    all_chapters = all_chapters.join(year_totals, on='year', how='left').with_columns([
+        (pl.when(pl.col('total_amount') != 0).then(pl.col('state_total_amount') / pl.col('total_amount') * 100).otherwise(None)).alias('state_percentage')
+    ])
+    if '% of Total' in all_chapters.columns:
         all_chapters = all_chapters.with_columns([
             (pl.col('state_percentage') / pl.when(pl.col('% of Total') != 0).then(pl.col('% of Total')).otherwise(None)).alias('pop_adj_units')
         ])
@@ -389,60 +429,46 @@ def _add_all_chapters_and_bimaru(df):
         all_chapters = all_chapters.with_columns([
             pl.lit(None).alias('pop_adj_units')
         ])
-    all_chapters = all_chapters.select(output_cols)
-    df = df.select(output_cols)
-    df = pl.concat([df, all_chapters])
-    # --- Add BIMARU rows ---
-    bimaru_states = [
-        'BIHAR', 'JHARKHAND', 'MADHYA PRADESH', 'CHHATTISGARH', 'RAJASTHAN', 'UTTAR PRADESH', 'UTTARAKHAND'
-    ]
-    bimaru_rows = []
-    for chapter in df['chapter'].unique().to_list():
-        for year in df['year'].unique().to_list():
-            mask = (df['state'].is_in(bimaru_states)) & (df['chapter'] == chapter) & (df['year'] == year)
-            sub = df.filter(mask)
-            if sub.height == 0:
-                continue
-            state_total_amount = sub['state_total_amount'].sum()
-            total_amount = sub['total_amount'].sum()
-            state_percentage = (state_total_amount / total_amount * 100) if total_amount != 0 else None
-            pop_adj_units = None
-            if 'pop_adj_units' in sub.columns:
-                pop_adj_units = sub['pop_adj_units'].sum()
-            bimaru_rows.append({
-                'state': 'BIMARU',
-                'chapter': chapter,
-                'year': year,
-                'state_total_amount': state_total_amount,
-                'total_amount': total_amount,
-                'state_percentage': state_percentage,
-                'pop_adj_units': pop_adj_units
-            })
-    for year in df['year'].unique().to_list():
-        mask = (df['state'].is_in(bimaru_states)) & (df['chapter'] == 'All Chapters') & (df['year'] == year)
-        sub = df.filter(mask)
-        if sub.height == 0:
-            continue
-        state_total_amount = sub['state_total_amount'].sum()
-        total_amount = sub['total_amount'].sum()
-        state_percentage = (state_total_amount / total_amount * 100) if total_amount != 0 else None
-        pop_adj_units = None
-        if 'pop_adj_units' in sub.columns:
-            pop_adj_units = sub['pop_adj_units'].sum()
-        bimaru_rows.append({
-            'state': 'BIMARU',
-            'chapter': 'All Chapters',
-            'year': year,
-            'state_total_amount': state_total_amount,
-            'total_amount': total_amount,
-            'state_percentage': state_percentage,
-            'pop_adj_units': pop_adj_units
-        })
-    if bimaru_rows:
-        bimaru_df = pl.DataFrame(bimaru_rows)
-        df = pl.concat([df, bimaru_df])
-    df = df.sort(['state', 'year', 'chapter'])
-    return df
+
+    # Finalize base (per-chapter) rows: expose _state_amount as state_total_amount
+    base_out = working.with_columns([
+        pl.col('_state_amount').alias('state_total_amount')
+    ]).select(output_cols)
+    all_chapters_out = all_chapters.select(output_cols)
+
+    df_out = pl.concat([base_out, all_chapters_out])
+
+    # Add BIMARU aggregate rows
+    bimaru_states = ['BIHAR', 'JHARKHAND', 'MADHYA PRADESH', 'CHHATTISGARH', 'RAJASTHAN', 'UTTAR PRADESH', 'UTTARAKHAND']
+    sub = df_out.filter(pl.col('state').is_in(bimaru_states))
+    if sub.height > 0:
+        # Compute combined BIMARU population share once
+        pop_df = pl.read_csv('DataCSV/population.csv').with_columns([
+            pl.col('state').cast(pl.String)
+        ])
+        bimaru_pop_pct = pop_df.filter(pl.col('state').is_in(bimaru_states))['% of Total'].sum()
+        bimaru_rows = (
+            sub.group_by(['year', 'chapter']).agg([
+                pl.col('state_total_amount').sum().alias('state_total_amount'),
+                pl.col('total_amount').max().alias('total_amount')
+            ])
+            .with_columns([
+                (pl.when(pl.col('total_amount') != 0)
+                 .then(pl.col('state_total_amount') / pl.col('total_amount') * 100)
+                 .otherwise(None)).alias('state_percentage'),
+                pl.lit('BIMARU').alias('state')
+            ])
+            .with_columns([
+                (pl.when((pl.lit(bimaru_pop_pct) != 0) & (pl.col('total_amount') != 0))
+                 .then((pl.col('state_total_amount') / pl.col('total_amount') * 100) / pl.lit(bimaru_pop_pct))
+                 .otherwise(None)).alias('pop_adj_units')
+            ])
+            .select(output_cols)
+        )
+        df_out = pl.concat([df_out, bimaru_rows])
+
+    df_out = df_out.sort(['state', 'year', 'chapter'])
+    return df_out
 
 if __name__ == "__main__":
     create_per_population_state_chapter_year()
