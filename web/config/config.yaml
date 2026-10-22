@@ -1,0 +1,6 @@
+app:
+  title: "Asha Grant Analysis 📊"
+  subtitle: "Independent, year-wise visualization of grants by [Asha for Education](https://ashanet.org/) chapters. Not affiliated with or endorsed by Asha for Education; data from public project pages."
+  theme: "light"
+data:
+  source: "data/example_data.csv"

@@ -1,0 +1,5 @@
+beautifulsoup4==4.12.3
+numpy
+pandas==2.2.2
+polars-lts-cpu==1.10.0
+streamlit==1.39.0

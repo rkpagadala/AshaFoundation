@@ -1,0 +1,911 @@
+pid,Status,Stewarding Chapter,Extracted State
+1, completed - requirements ended  ,,UTTAR PRADESH
+2, completed - things went wrong  ,,MAHARASHTRA
+3, completed - requirements ended  ,,HARYANA
+4, completed - sustainable  ,,BIHAR
+5, completed - requirements ended  ,,KARNATAKA
+6, completed - requirements ended  ,,MADHYA PRADESH
+7, completed - requirements ended  ,,JHARKHAND
+8, completed - requirements ended  ,,WEST BENGAL
+11, completed - requirements ended  ,,DELHI
+12, completed - requirements ended  ,,TAMIL NADU
+13, completed - requirements ended  ,,WEST BENGAL
+14, completed - requirements ended  ,,KARNATAKA
+15, completed - things went wrong  ,,UTTAR PRADESH
+16, completed - requirements ended  ,,JHARKHAND
+17, completed - requirements ended  ,,TAMIL NADU
+18, current / ongoing  ,,KARNATAKA
+19, completed - requirements ended  ,,TAMIL NADU
+20, completed - sustainable  ,,UTTAR PRADESH
+22, completed - requirements ended  ,,UTTAR PRADESH
+25, current / ongoing  ,,DELHI
+26, completed - requirements ended  ,,PUDUCHERRY
+27, current / ongoing  ,,MAHARASHTRA
+29, completed - requirements ended  ,,HARYANA
+30, completed - requirements ended  ,,MAHARASHTRA
+31, completed - requirements ended  ,,KARNATAKA
+33, completed - requirements ended  ,,ANDHRA PRADESH
+34, completed - requirements ended  ,,UTTAR PRADESH
+35, current / ongoing  ,,UTTAR PRADESH
+38, completed - requirements ended  ,,MAHARASHTRA
+39, completed - requirements ended  ,,WEST BENGAL
+40, completed - requirements ended  ,,TAMIL NADU
+42, completed - requirements ended  ,,TAMIL NADU
+43, current / ongoing  ,,WEST BENGAL
+44, completed - requirements ended  ,,MADHYA PRADESH
+45, completed - requirements ended  ,,MAHARASHTRA
+46, completed - requirements ended  ,,HARYANA
+49, completed - requirements ended  ,,TAMIL NADU
+50, completed - requirements ended  ,,WEST BENGAL
+51, completed - requirements ended  ,,KARNATAKA
+52, completed - requirements ended  ,,KARNATAKA
+53, current / ongoing  ,,KARNATAKA
+54, completed - sustainable  ,,MAHARASHTRA
+56, current / ongoing  ,,RAJASTHAN
+58, completed - requirements ended  ,,MAHARASHTRA
+59, completed - requirements ended  ,,ANDHRA PRADESH
+60, completed - requirements ended  ,,ANDHRA PRADESH
+62, completed - things went wrong  ,,DELHI
+64, completed - requirements ended  ,,UTTAR PRADESH
+65, completed - requirements ended  ,,MANIPUR
+68, completed - requirements ended  ,,KARNATAKA
+69, completed - requirements ended  ,,ODISHA
+71, completed - requirements ended  ,,RAJASTHAN
+72, completed - requirements ended  ,,ANDHRA PRADESH
+74, completed - requirements ended  ,,TAMIL NADU
+77, current / ongoing  ,,WEST BENGAL
+78, completed - requirements ended  ,,TAMIL NADU
+79, completed - requirements ended  ,,TAMIL NADU
+80, completed - requirements ended  ,,MAHARASHTRA
+81, current / ongoing  ,,UTTAR PRADESH
+82, completed - requirements ended  ,,JHARKHAND
+84, completed - sustainable  ,,TAMIL NADU
+86, completed - requirements ended  ,,WEST BENGAL
+87, completed - requirements ended  ,,MAHARASHTRA
+88, completed - things went wrong  ,,TELANGANA
+90, completed - requirements ended  ,,DELHI
+92, completed - requirements ended  ,,WEST BENGAL
+93, current / ongoing  ,,WEST BENGAL
+94, completed - requirements ended  ,,JHARKHAND
+95, completed - requirements ended  ,,ASSAM
+96, completed - requirements ended  ,,KARNATAKA
+98, current / ongoing  ,,UTTAR PRADESH
+99, current / ongoing  ,,UTTAR PRADESH
+100, completed - requirements ended  ,,TAMIL NADU
+101, completed - requirements ended  ,,ANDHRA PRADESH
+102, completed - requirements ended  ,,ANDHRA PRADESH
+105, completed - requirements ended  ,,TAMIL NADU
+107, completed - requirements ended  ,,MADHYA PRADESH
+110, completed - requirements ended  ,,WEST BENGAL
+111, completed - requirements ended  ,,ANDHRA PRADESH
+112, completed - requirements ended  ,,ODISHA
+113, completed - requirements ended  ,,TAMIL NADU
+114, completed - requirements ended  ,,TAMIL NADU
+118, completed - things went wrong  ,,KARNATAKA
+120, completed - sustainable  ,,GUJARAT
+121, completed - requirements ended  ,,KARNATAKA
+122, completed - requirements ended  ,,GUJARAT
+123, completed - requirements ended  ,,MAHARASHTRA
+124, current / ongoing  ,,UTTAR PRADESH
+126, completed - requirements ended  ,,MAHARASHTRA
+128, completed - requirements ended  ,,WEST BENGAL
+130, terminated  ,,ODISHA
+131, completed - requirements ended  ,,TAMIL NADU
+132, completed - requirements ended  ,,UTTARAKHAND
+133, completed - requirements ended  ,,TAMIL NADU
+137, proposal-evaluation by chapter  ,,KARNATAKA
+138, completed - requirements ended  ,,MAHARASHTRA
+140, completed - things went wrong  ,,JHARKHAND
+141, completed - requirements ended  ,,PUNJAB
+142, completed - things went wrong  ,,MAHARASHTRA
+143, completed - requirements ended  ,,DELHI
+144, completed - requirements ended  ,,RAJASTHAN
+145, completed - things went wrong  ,,BIHAR
+147, completed - things went wrong  ,,TAMIL NADU
+148, terminated  ,,TAMIL NADU
+152, completed - requirements ended  ,,KERALA
+154, completed - requirements ended  ,,MAHARASHTRA
+155, current / ongoing  ,,ANDHRA PRADESH
+156, completed - requirements ended  ,,UTTAR PRADESH
+158, completed - requirements ended  ,,KARNATAKA
+159, completed - requirements ended  ,,UTTAR PRADESH
+161, completed - requirements ended  ,,GUJARAT
+162, completed - requirements ended  ,,GUJARAT
+165, completed - requirements ended  ,,JHARKHAND
+166, current / ongoing  ,,TAMIL NADU
+168, completed - requirements ended  ,,KARNATAKA
+169, completed - requirements ended  ,,TAMIL NADU
+170, completed - requirements ended  ,,TAMIL NADU
+174, completed - requirements ended  ,,TAMIL NADU
+175, completed - requirements ended  ,,GUJARAT
+176, completed - requirements ended  ,,KARNATAKA
+177, completed - sustainable  ,,KARNATAKA
+178, terminated  ,,TAMIL NADU
+179, completed - requirements ended  ,,JHARKHAND
+180, completed - requirements ended  ,,KARNATAKA
+183, completed - requirements ended  ,,TAMIL NADU
+184, completed - requirements ended  ,,KARNATAKA
+186, completed - requirements ended  ,,KARNATAKA
+187, completed - requirements ended  ,,JHARKHAND
+188, completed - requirements ended  ,,TAMIL NADU
+189, completed - requirements ended  ,,WEST BENGAL
+191, completed - requirements ended  ,,KARNATAKA
+192, completed - requirements ended  ,,ANDHRA PRADESH
+193, completed - requirements ended  ,,MAHARASHTRA
+195, completed - sustainable  ,,MAHARASHTRA
+197, completed - requirements ended  ,,MAHARASHTRA
+198, completed - requirements ended  ,,KARNATAKA
+199, completed - requirements ended  ,,WEST BENGAL
+200, completed - requirements ended  ,,ANDHRA PRADESH
+201, completed - requirements ended  ,,TAMIL NADU
+202, completed - requirements ended  ,,TAMIL NADU
+203, completed - requirements ended  ,,TAMIL NADU
+204, current / ongoing  ,,ANDHRA PRADESH
+205, completed - requirements ended  ,,TAMIL NADU
+206, terminated  ,,TAMIL NADU
+207, completed - requirements ended  ,,TAMIL NADU
+208, completed - things went wrong  ,,TAMIL NADU
+209, terminated  ,,WEST BENGAL
+210, completed - sustainable  ,,TAMIL NADU
+214, completed - requirements ended  ,,UTTAR PRADESH
+226, completed - requirements ended  ,,RAJASTHAN
+227, completed - requirements ended  ,,TAMIL NADU
+229, Support ended.  ,,KERALA
+230, terminated  ,,MAHARASHTRA
+231, completed - things went wrong  ,,TELANGANA
+232, rejected  ,,MAHARASHTRA
+234, completed - requirements ended  ,,KARNATAKA
+235, completed - requirements ended  ,,UTTAR PRADESH
+236, completed - requirements ended  ,,MAHARASHTRA
+237, completed - requirements ended  ,,DELHI
+238, completed - requirements ended  ,,MAHARASHTRA
+239, completed - requirements ended  ,,TAMIL NADU
+240, completed - requirements ended  ,,KARNATAKA
+241, completed - requirements ended  ,,KARNATAKA
+242, completed - sustainable  ,,WEST BENGAL
+244, completed - requirements ended  ,,MAHARASHTRA
+245, completed - things went wrong  ,,WEST BENGAL
+246, completed - requirements ended  ,,ODISHA
+247, completed - things went wrong  ,,WEST BENGAL
+248, completed - sustainable  ,,MAHARASHTRA
+249, completed - requirements ended  ,,BIHAR
+250, completed - requirements ended  ,,TAMIL NADU
+252, completed - requirements ended  ,,TAMIL NADU
+253, current / ongoing  ,,UTTAR PRADESH
+255, completed - requirements ended  ,,UTTAR PRADESH
+257, completed - sustainable  ,,GOA
+258, completed - requirements ended  ,,TAMIL NADU
+259, terminated  ,,DELHI
+260, completed - requirements ended  ,,TAMIL NADU
+261, completed - requirements ended  ,,WEST BENGAL
+262, completed - requirements ended  ,,DELHI
+263, current / ongoing  ,,TAMIL NADU
+264, completed - requirements ended  ,,UTTARAKHAND
+265, completed - requirements ended  ,,TAMIL NADU
+266, completed - requirements ended  ,,MAHARASHTRA
+267, current / ongoing  ,,MADHYA PRADESH
+268, current / ongoing  ,,ASSAM
+270, completed - requirements ended  ,,UTTAR PRADESH
+271, completed - requirements ended  ,,TAMIL NADU
+272, completed - requirements ended  ,,UTTAR PRADESH
+273, completed - requirements ended  ,,WEST BENGAL
+274, completed - requirements ended  ,,ANDHRA PRADESH
+275, completed - things went wrong  ,,MAHARASHTRA
+276, completed - things went wrong  ,,UTTAR PRADESH
+277, completed - requirements ended  ,,KERALA
+278, current / ongoing  ,,WEST BENGAL
+279, completed - requirements ended  ,,ANDHRA PRADESH
+280, completed - requirements ended  ,,KARNATAKA
+281, completed - requirements ended  ,,ANDHRA PRADESH
+282, completed - requirements ended  ,,KARNATAKA
+283, completed - requirements ended  ,,KARNATAKA
+284, current / ongoing  ,,ASSAM
+285, completed - requirements ended  ,,UTTAR PRADESH
+286, completed - requirements ended  ,,MAHARASHTRA
+287, completed - requirements ended  ,,ODISHA
+288, completed - sustainable  ,,TAMIL NADU
+290, completed - requirements ended  ,,TAMIL NADU
+291, current / ongoing  ,,KARNATAKA
+292, completed - requirements ended  ,,KARNATAKA
+293, completed - requirements ended  ,,TAMIL NADU
+296, completed - requirements ended  ,,KARNATAKA
+297, completed - requirements ended  ,,JHARKHAND
+299, completed - requirements ended  ,,UTTAR PRADESH
+300, current / ongoing  ,,WEST BENGAL
+301, completed - requirements ended  ,,RAJASTHAN
+302, completed - requirements ended  ,,KARNATAKA
+304, completed - requirements ended  ,,KARNATAKA
+306, completed - requirements ended  ,,WEST BENGAL
+307, completed - requirements ended  ,,SIKKIM
+308, completed - requirements ended  ,,RAJASTHAN
+309, completed - sustainable  ,,ODISHA
+310, completed - requirements ended  ,,TAMIL NADU
+311, Support ended.  ,,UTTAR PRADESH
+312, proposal - received  ,,GUJARAT
+318, current / ongoing  ,,WEST BENGAL
+319, completed - requirements ended  ,,RAJASTHAN
+323, Proposal - Closed  ,,WEST BENGAL
+324, completed - requirements ended  ,,TELANGANA
+325, completed - requirements ended  ,,MAHARASHTRA
+326, completed - requirements ended  ,,KARNATAKA
+327, completed - requirements ended  ,,KERALA
+328, completed - requirements ended  ,,MAHARASHTRA
+331, completed - requirements ended  ,,UTTAR PRADESH
+332, completed - requirements ended  ,,TAMIL NADU
+335, completed - requirements ended  ,,ODISHA
+338, completed - requirements ended  ,,TAMIL NADU
+339, completed - requirements ended  ,,TELANGANA
+340, completed - requirements ended  ,,TAMIL NADU
+341, completed - requirements ended  ,,DELHI
+342, completed - requirements ended  ,,MADHYA PRADESH
+343, completed - requirements ended  ,,GUJARAT
+344, completed - requirements ended  ,,RAJASTHAN
+345, completed - requirements ended  ,,MAHARASHTRA
+347, completed - requirements ended  ,,UTTAR PRADESH
+349, current / ongoing  ,,KARNATAKA
+350, completed - requirements ended  ,,UTTAR PRADESH
+351, terminated  ,,JHARKHAND
+352, completed - requirements ended  ,,KARNATAKA
+353, Proposal - Closed  ,,RAJASTHAN
+354, current / ongoing  ,,MANIPUR
+360, completed - requirements ended  ,,TAMIL NADU
+362, Support ended.  ,,MAHARASHTRA
+363, current / ongoing  ,,MAHARASHTRA
+364, completed - requirements ended  ,,GUJARAT
+367, completed - requirements ended  ,,DELHI
+370, completed - requirements ended  ,,ANDHRA PRADESH
+375, completed - requirements ended  ,,UTTAR PRADESH
+378, completed - requirements ended  ,,KERALA
+381, completed - requirements ended  ,,DELHI
+384, completed - requirements ended  ,,GUJARAT
+385, completed - requirements ended  ,,KERALA
+386, completed - requirements ended  ,,TAMIL NADU
+389, completed - requirements ended  ,,TAMIL NADU
+390, completed - requirements ended  ,,GUJARAT
+393, completed - requirements ended  ,,GUJARAT
+394, completed - requirements ended  ,,TAMIL NADU
+396, completed - requirements ended  ,,UTTAR PRADESH
+397, current / ongoing  ,,KARNATAKA
+398, completed - things went wrong  ,,UTTAR PRADESH
+401, rejected  ,,MAHARASHTRA
+402, completed - requirements ended  ,,UTTAR PRADESH
+403, completed - requirements ended  ,,MAHARASHTRA
+404, completed - things went wrong  ,,UTTAR PRADESH
+405, completed - requirements ended  ,,TAMIL NADU
+408, completed - requirements ended  ,,TAMIL NADU
+409, completed - requirements ended  ,,ANDHRA PRADESH
+410, completed - requirements ended  ,,KARNATAKA
+412, Support ended.  ,,MAHARASHTRA
+413, completed - requirements ended  ,,ANDHRA PRADESH
+414, current / ongoing  ,,KARNATAKA
+415, completed - requirements ended  ,,TRIPURA
+416, completed - requirements ended  ,,DELHI
+417, completed - sustainable  ,,JAMMU AND KASHMIR
+418, completed - requirements ended  ,,ANDHRA PRADESH
+419, current / ongoing  ,,ASSAM
+421, completed - requirements ended  ,,MADHYA PRADESH
+422, completed - sustainable  ,,TAMIL NADU
+423, completed - requirements ended  ,,MAHARASHTRA
+424, completed - requirements ended  ,,TAMIL NADU
+426, completed - requirements ended  ,,KARNATAKA
+429, completed - requirements ended  ,,KARNATAKA
+430, completed - requirements ended  ,,KARNATAKA
+435, completed - sustainable  ,,JHARKHAND
+437, completed - sustainable  ,,GUJARAT
+439, completed - requirements ended  ,,TAMIL NADU
+440, completed - requirements ended  ,,UTTAR PRADESH
+441, Proposal - Closed  ,,KARNATAKA
+443, completed - sustainable  ,,WEST BENGAL
+444, completed - requirements ended  ,,DELHI
+450, completed - requirements ended  ,,UTTAR PRADESH
+451, completed - requirements ended  ,,KARNATAKA
+452, completed - requirements ended  ,,UTTAR PRADESH
+453, completed - requirements ended  ,,MAHARASHTRA
+455, completed - requirements ended  ,,WEST BENGAL
+456, completed - requirements ended  ,,GUJARAT
+457, rejected  ,,TAMIL NADU
+458, current / ongoing  ,,UTTAR PRADESH
+463, completed - requirements ended  ,,UTTAR PRADESH
+464, completed - requirements ended  ,,UTTAR PRADESH
+465, completed - requirements ended  ,,DELHI
+466, completed - things went wrong  ,,UTTAR PRADESH
+472, completed - requirements ended  ,,KARNATAKA
+473, completed - requirements ended  ,,BIHAR
+474, terminated  ,,DELHI
+476, completed - requirements ended  ,,MAHARASHTRA
+481, Support ended.  ,,KARNATAKA
+483, Proposal - Closed  ,,GUJARAT
+484, completed - requirements ended  ,,ANDHRA PRADESH
+485, completed - requirements ended  ,,KARNATAKA
+486, completed - requirements ended  ,,KARNATAKA
+489, completed - requirements ended  ,,TAMIL NADU
+490, completed - requirements ended  ,,KARNATAKA
+491, Proposal - Closed  ,,UTTAR PRADESH
+494, completed - requirements ended  ,,TAMIL NADU
+495, completed - requirements ended  ,,MAHARASHTRA
+496, completed - requirements ended  ,,GUJARAT
+497, Support ended.  ,,MAHARASHTRA
+499, completed - requirements ended  ,,JHARKHAND
+500, completed - requirements ended  ,,TELANGANA
+502, completed - requirements ended  ,,TAMIL NADU
+503, completed - requirements ended  ,,TAMIL NADU
+504, completed - requirements ended  ,,KARNATAKA
+505, current / ongoing  ,,TAMIL NADU
+510, completed - requirements ended  ,,MANIPUR
+512, completed - requirements ended  ,,UTTARAKHAND
+517, completed - requirements ended  ,,ANDHRA PRADESH
+520, completed - requirements ended  ,,KARNATAKA
+521, completed - requirements ended  ,,GUJARAT
+525, rejected  ,,MAHARASHTRA
+527, completed - requirements ended  ,,TELANGANA
+529, completed - requirements ended  ,,TAMIL NADU
+530, completed - requirements ended  ,,MADHYA PRADESH
+531, Proposal - Closed  ,,ANDHRA PRADESH
+532, completed - requirements ended  ,,GUJARAT
+533, completed - requirements ended  ,,JAMMU AND KASHMIR
+534, Proposal - Closed  ,,KERALA
+535, completed - sustainable  ,,KARNATAKA
+537, completed - requirements ended  ,,WEST BENGAL
+548, Proposal - Closed  ,,TAMIL NADU
+549, completed - requirements ended  ,,TAMIL NADU
+552, proposal-evaluation by chapter  ,,WEST BENGAL
+553, completed - requirements ended  ,,TAMIL NADU
+554, completed - requirements ended  ,,TAMIL NADU
+555, current / ongoing  ,,TAMIL NADU
+558, completed - requirements ended  ,,TAMIL NADU
+559, completed - requirements ended  ,,TAMIL NADU
+562, completed - requirements ended  ,,WEST BENGAL
+564, completed - requirements ended  ,,TAMIL NADU
+565, completed - requirements ended  ,,TAMIL NADU
+567, completed - requirements ended  ,,KARNATAKA
+568, completed - requirements ended  ,,WEST BENGAL
+572, completed - requirements ended  ,,TAMIL NADU
+573, completed - requirements ended  ,,TRIPURA
+574, current / ongoing  ,,MAHARASHTRA
+575, completed - requirements ended  ,,ANDHRA PRADESH
+577, completed - things went wrong  ,,HARYANA
+578, current / ongoing  ,,TAMIL NADU
+579, current / ongoing  ,,TAMIL NADU
+582, completed - requirements ended  ,,DELHI
+583, Proposal - Closed  ,,DELHI
+585, Support ended.  ,,KARNATAKA
+586, completed - requirements ended  ,,TAMIL NADU
+587, current / ongoing  ,,TAMIL NADU
+590, current / ongoing  ,,TAMIL NADU
+591, completed - requirements ended  ,,TAMIL NADU
+592, current / ongoing  ,,KARNATAKA
+594, completed - requirements ended  ,,WEST BENGAL
+597, proposal-evaluation by chapter  ,,TAMIL NADU
+598, proposal-evaluation by chapter  ,,TAMIL NADU
+599, completed - requirements ended  ,,TAMIL NADU
+600, current / ongoing  ,,KERALA
+601, completed - sustainable  ,,TAMIL NADU
+602, completed - requirements ended  ,,KARNATAKA
+603, completed - sustainable  ,,RAJASTHAN
+604, completed - requirements ended  ,,TAMIL NADU
+610, completed - requirements ended  ,,TAMIL NADU
+611, current / ongoing  ,,UTTAR PRADESH
+614, completed - requirements ended  ,,UTTAR PRADESH
+615, completed - requirements ended  ,,WEST BENGAL
+616, Support ended.  ,,KARNATAKA
+617, completed - requirements ended  ,,KARNATAKA
+618, completed - requirements ended  ,,KARNATAKA
+619, current / ongoing  ,,UTTAR PRADESH
+620, current / ongoing  ,,HARYANA
+622, rejected  ,,PUDUCHERRY
+623, completed - requirements ended  ,,TAMIL NADU
+624, completed - requirements ended  ,,UTTAR PRADESH
+626, current / ongoing  ,,TAMIL NADU
+628, current / ongoing  ,,JAMMU AND KASHMIR
+631, completed - requirements ended  ,,ANDAMAN AND NICOBAR ISLANDS
+633, completed - requirements ended  ,,KARNATAKA
+634, current / ongoing  ,,KERALA
+635, completed - requirements ended  ,,ANDHRA PRADESH
+636, completed - sustainable  ,,UTTARAKHAND
+637, completed - requirements ended  ,,TAMIL NADU
+638, completed - requirements ended  ,,KERALA
+640, completed - requirements ended  ,,KARNATAKA
+641, completed - sustainable  ,,TAMIL NADU
+642, completed - requirements ended  ,,GUJARAT
+646, completed - requirements ended  ,,TAMIL NADU
+648, current / ongoing  ,,WEST BENGAL
+650, completed - requirements ended  ,,ANDHRA PRADESH
+656, completed - requirements ended  ,,TAMIL NADU
+657, completed - requirements ended  ,,KARNATAKA
+658, completed - requirements ended  ,,MAHARASHTRA
+659, current / ongoing  ,,MAHARASHTRA
+660, completed - requirements ended  ,,TAMIL NADU
+661, completed - requirements ended  ,,MAHARASHTRA
+662, completed - requirements ended  ,,TAMIL NADU
+663, completed - requirements ended  ,,TAMIL NADU
+664, completed - requirements ended  ,,TAMIL NADU
+665, completed - requirements ended  ,,TAMIL NADU
+666, Proposal - Closed  ,,GUJARAT
+667, completed - requirements ended  ,,TAMIL NADU
+668, current / ongoing  ,,TAMIL NADU
+671, current / ongoing  ,,WEST BENGAL
+677, completed - requirements ended  ,,MANIPUR
+678, completed - requirements ended  ,,DELHI
+680, Support ended.  ,,UTTAR PRADESH
+682, completed - requirements ended  ,,WEST BENGAL
+683, completed - requirements ended  ,,DELHI
+684, completed - requirements ended  ,,TAMIL NADU
+686, current / ongoing  ,,MAHARASHTRA
+687, completed - requirements ended  ,,RAJASTHAN
+691, completed - requirements ended  ,,UTTAR PRADESH
+697, current / ongoing  ,,GUJARAT
+700, completed - requirements ended  ,,RAJASTHAN
+702, completed - requirements ended  ,,TAMIL NADU
+703, completed - sustainable  ,,DELHI
+704, current / ongoing  ,,TAMIL NADU
+705, completed - requirements ended  ,,ASSAM
+707, current / ongoing  ,,UTTAR PRADESH
+709, completed - requirements ended  ,,ANDHRA PRADESH
+710, completed - things went wrong  ,,ODISHA
+711, proposal-evaluation by chapter  ,,TAMIL NADU
+713, completed - requirements ended  ,,ODISHA
+715, completed - requirements ended  ,,UTTAR PRADESH
+716, current / ongoing  ,,TAMIL NADU
+717, completed - requirements ended  ,,MAHARASHTRA
+718, completed - requirements ended  ,,KARNATAKA
+719, completed - requirements ended  ,,PUNJAB
+720, completed - requirements ended  ,,TAMIL NADU
+723, completed - requirements ended  ,,ANDHRA PRADESH
+724, completed - requirements ended  ,,WEST BENGAL
+726, Support ended.  ,,KARNATAKA
+727, completed - requirements ended  ,,ANDHRA PRADESH
+729, completed - requirements ended  ,,CHHATTISGARH
+730, completed - requirements ended  ,,TELANGANA
+731, completed - requirements ended  ,,MADHYA PRADESH
+733, completed - requirements ended  ,,UTTAR PRADESH
+736, completed - requirements ended  ,,DELHI
+737, completed - requirements ended  ,,WEST BENGAL
+739, completed - requirements ended  ,,MAHARASHTRA
+740, completed - requirements ended  ,,TAMIL NADU
+741, completed - requirements ended  ,,TAMIL NADU
+745, current / ongoing  ,,DELHI
+746, current / ongoing  ,,ODISHA
+747, completed - requirements ended  ,,DELHI
+748, completed - requirements ended  ,,TAMIL NADU
+750, completed - requirements ended  ,,ODISHA
+753, Support ended.  ,,ODISHA
+754, completed - requirements ended  ,,TAMIL NADU
+756, current / ongoing  ,,WEST BENGAL
+757, completed - requirements ended  ,,WEST BENGAL
+758, completed - requirements ended  ,,ASSAM
+759, rejected  ,,UTTAR PRADESH
+761, proposal-evaluation by chapter  ,,ASSAM
+762, completed - requirements ended  ,,BIHAR
+763, proposal-evaluation by chapter  ,,MAHARASHTRA
+764, current / ongoing  ,,MAHARASHTRA
+765, completed - requirements ended  ,,UTTAR PRADESH
+766, completed - requirements ended  ,,GUJARAT
+767, terminated  ,,MADHYA PRADESH
+769, completed - requirements ended  ,,KERALA
+770, completed - requirements ended  ,,UTTAR PRADESH
+771, completed - requirements ended  ,,MAHARASHTRA
+772, completed - requirements ended  ,,UTTAR PRADESH
+773, completed - requirements ended  ,,TAMIL NADU
+776, completed - requirements ended  ,,TAMIL NADU
+777, completed - requirements ended  ,,TAMIL NADU
+778, completed - requirements ended  ,,TAMIL NADU
+780, completed - requirements ended  ,,TAMIL NADU
+782, completed - requirements ended  ,,TAMIL NADU
+783, Support ended.  ,,BIHAR
+784, completed - requirements ended  ,,ANDHRA PRADESH
+785, completed - requirements ended  ,,TAMIL NADU
+786, terminated  ,,DELHI
+787, current / ongoing  ,,TAMIL NADU
+788, current / ongoing  ,,WEST BENGAL
+789, completed - requirements ended  ,,KARNATAKA
+790, completed - requirements ended  ,,KARNATAKA
+791, completed - requirements ended  ,,TAMIL NADU
+792, completed - requirements ended  ,,MAHARASHTRA
+794, current / ongoing  ,,WEST BENGAL
+797, Proposal - Closed  ,,UTTAR PRADESH
+798, completed - things went wrong  ,,ODISHA
+799, completed - requirements ended  ,,MAHARASHTRA
+800, completed - requirements ended  ,,MAHARASHTRA
+801, completed - things went wrong  ,,TAMIL NADU
+803, completed - requirements ended  ,,ASSAM
+805, current / ongoing  ,,TAMIL NADU
+807, rejected  ,,TAMIL NADU
+808, completed - requirements ended  ,,DELHI
+809, current / ongoing  ,,TAMIL NADU
+810, completed - requirements ended  ,,RAJASTHAN
+811, completed - requirements ended  ,,ODISHA
+812, completed - requirements ended  ,,TELANGANA
+814, completed - requirements ended  ,,UTTAR PRADESH
+815, completed - requirements ended  ,,MAHARASHTRA
+817, completed - requirements ended  ,,MAHARASHTRA
+819, Support ended.  ,,MADHYA PRADESH
+820, completed - requirements ended  ,,WEST BENGAL
+821, completed - requirements ended  ,,KARNATAKA
+824, completed - requirements ended  ,,MAHARASHTRA
+826, terminated  ,,TAMIL NADU
+827, current / ongoing  ,,MAHARASHTRA
+829, completed - sustainable  ,,WEST BENGAL
+830, completed - requirements ended  ,,DELHI
+832, completed - requirements ended  ,,MAHARASHTRA
+834, current / ongoing  ,,MAHARASHTRA
+835, completed - requirements ended  ,,ANDHRA PRADESH
+836, completed - requirements ended  ,,GOA
+837, completed - requirements ended  ,,WEST BENGAL
+839, current / ongoing  ,,WEST BENGAL
+840, completed - requirements ended  ,,GUJARAT
+842, completed - requirements ended  ,,WEST BENGAL
+845, current / ongoing  ,,TAMIL NADU
+847, completed - things went wrong  ,,TELANGANA
+848, current / ongoing  ,,DELHI
+849, current / ongoing  ,,DELHI
+852, completed - requirements ended  ,,ANDHRA PRADESH
+854, completed - requirements ended  ,,ANDHRA PRADESH
+855, completed - requirements ended  ,,MAHARASHTRA
+856, Support ended.  ,,WEST BENGAL
+857, completed - requirements ended  ,,WEST BENGAL
+858, completed - requirements ended  ,,TAMIL NADU
+862, completed - requirements ended  ,,KARNATAKA
+863, completed - requirements ended  ,,UTTAR PRADESH
+865, completed - requirements ended  ,,ANDHRA PRADESH
+866, completed - requirements ended  ,,DELHI
+868, completed - requirements ended  ,,ANDHRA PRADESH
+869, completed - requirements ended  ,,TAMIL NADU
+872, current / ongoing  ,,MADHYA PRADESH
+873, completed - requirements ended  ,,MAHARASHTRA
+874, completed - requirements ended  ,,GUJARAT
+876, current / ongoing  ,,RAJASTHAN
+877, completed - requirements ended  ,,TAMIL NADU
+878, completed - requirements ended  ,,KARNATAKA
+879, completed - sustainable  ,,TAMIL NADU
+880, completed - requirements ended  ,,TAMIL NADU
+881, completed - sustainable  ,,ASSAM
+882, Support ended.  ,,JHARKHAND
+883, Support ended.  ,,TELANGANA
+884, Support ended.  ,,TAMIL NADU
+885, current / ongoing  ,,WEST BENGAL
+888, completed - requirements ended  ,,ANDHRA PRADESH
+890, completed - requirements ended  ,,TAMIL NADU
+891, completed - sustainable  ,,ANDHRA PRADESH
+892, current / ongoing  ,,MAHARASHTRA
+895, current / ongoing  ,,RAJASTHAN
+896, current / ongoing  ,,WEST BENGAL
+897, completed - requirements ended  ,,WEST BENGAL
+899, current / ongoing  ,,TAMIL NADU
+900, completed - requirements ended  ,,TELANGANA
+901, completed - sustainable  ,,GUJARAT
+902, completed - requirements ended  ,,KARNATAKA
+903, completed - requirements ended  ,,WEST BENGAL
+904, completed - requirements ended  ,,WEST BENGAL
+905, Support ended.  ,,RAJASTHAN
+906, completed - requirements ended  ,,RAJASTHAN
+907, completed - requirements ended  ,,UTTAR PRADESH
+908, completed - requirements ended  ,,DELHI
+909, completed - requirements ended  ,,TAMIL NADU
+910, current / ongoing  ,,KARNATAKA
+911, completed - requirements ended  ,,DELHI
+912, Support ended.  ,,UTTAR PRADESH
+913, completed - requirements ended  ,,TELANGANA
+915, completed - requirements ended  ,,WEST BENGAL
+916, completed - requirements ended  ,,DELHI
+917, completed - requirements ended  ,,KARNATAKA
+918, completed - requirements ended  ,,MAHARASHTRA
+919, current / ongoing  ,,UTTAR PRADESH
+920, completed - requirements ended  ,,DELHI
+921, completed - requirements ended  ,,KARNATAKA
+925, current / ongoing  ,,RAJASTHAN
+926, completed - requirements ended  ,,KARNATAKA
+927, completed - requirements ended  ,,MADHYA PRADESH
+928, Support ended.  ,,UTTAR PRADESH
+930, completed - requirements ended  ,,TAMIL NADU
+931, current / ongoing  ,,DELHI
+932, current / ongoing  ,,MAHARASHTRA
+933, completed - requirements ended  ,,TAMIL NADU
+934, completed - requirements ended  ,,ODISHA
+935, Proposal - Closed  ,,ASSAM
+937, completed - requirements ended  ,,MADHYA PRADESH
+941, completed - requirements ended  ,,BIHAR
+947, completed - requirements ended  ,,UTTAR PRADESH
+948, completed - requirements ended  ,,ANDHRA PRADESH
+949, completed - requirements ended  ,,MAHARASHTRA
+953, completed - requirements ended  ,,WEST BENGAL
+954, Proposal - Closed  ,,UTTAR PRADESH
+955, completed - requirements ended  ,,WEST BENGAL
+956, current / ongoing  ,,TAMIL NADU
+957, Support ended.  ,,TAMIL NADU
+958, completed - sustainable  ,,WEST BENGAL
+961, completed - requirements ended  ,,UTTARAKHAND
+964, completed - requirements ended  ,,MAHARASHTRA
+966, completed - requirements ended  ,,KARNATAKA
+967, current / ongoing  ,,TAMIL NADU
+969, completed - requirements ended  ,,WEST BENGAL
+970, current / ongoing  ,,RAJASTHAN
+972, completed - sustainable  ,,HARYANA
+973, completed - requirements ended  ,,TAMIL NADU
+974, completed - sustainable  ,,TAMIL NADU
+975, completed - requirements ended  ,,TAMIL NADU
+976, completed - requirements ended  ,,BIHAR
+977, completed - requirements ended  ,,TAMIL NADU
+982, current / ongoing  ,,TAMIL NADU
+983, completed - requirements ended  ,,WEST BENGAL
+984, completed - requirements ended  ,,DELHI
+985, current / ongoing  ,,BIHAR
+988, completed - requirements ended  ,,MAHARASHTRA
+989, completed - requirements ended  ,,KARNATAKA
+990, current / ongoing  ,,UTTAR PRADESH
+991, current / ongoing  ,,WEST BENGAL
+993, current / ongoing  ,,TELANGANA
+994, completed - requirements ended  ,,TAMIL NADU
+995, completed - requirements ended  ,,DELHI
+998, completed - requirements ended  ,,TELANGANA
+999, current / ongoing  ,,MAHARASHTRA
+1000, current / ongoing  ,,MAHARASHTRA
+1006, completed - sustainable  ,,TAMIL NADU
+1009, completed - requirements ended  ,,MAHARASHTRA
+1012, completed - requirements ended  ,,TAMIL NADU
+1014, current / ongoing  ,,TAMIL NADU
+1015, completed - requirements ended  ,,UTTAR PRADESH
+1017, completed - sustainable  ,,WEST BENGAL
+1018, current / ongoing  ,,WEST BENGAL
+1019, completed - requirements ended  ,,TAMIL NADU
+1020, completed - requirements ended  ,,KERALA
+1021, completed - requirements ended  ,,TAMIL NADU
+1022, proposal - received  ,,ANDHRA PRADESH
+1023, completed - requirements ended  ,,MAHARASHTRA
+1026, completed - requirements ended  ,,WEST BENGAL
+1027, completed - requirements ended  ,,MAHARASHTRA
+1028, rejected  ,,WEST BENGAL
+1029, current / ongoing  ,,TAMIL NADU
+1031, completed - requirements ended  ,,UTTAR PRADESH
+1032, proposal - received  ,,MAHARASHTRA
+1033, completed - requirements ended  ,,ODISHA
+1035, current / ongoing  ,,RAJASTHAN
+1036, completed - requirements ended  ,,TAMIL NADU
+1040, completed - requirements ended  ,,TAMIL NADU
+1042, current / ongoing  ,,UTTAR PRADESH
+1044, current / ongoing  ,,WEST BENGAL
+1045, completed - sustainable  ,,KARNATAKA
+1046, completed - requirements ended  ,,WEST BENGAL
+1048, completed - things went wrong  ,,WEST BENGAL
+1050, completed - requirements ended  ,,MAHARASHTRA
+1053, completed - requirements ended  ,,CHHATTISGARH
+1055, Support ended.  ,,WEST BENGAL
+1056, rejected  ,,ANDHRA PRADESH
+1058, completed - requirements ended  ,,DELHI
+1059, Support ended.  ,,TAMIL NADU
+1062, completed - requirements ended  ,,DELHI
+1063, completed - requirements ended  ,,TAMIL NADU
+1064, completed - requirements ended  ,,WEST BENGAL
+1065, completed - requirements ended  ,,WEST BENGAL
+1066, completed - requirements ended  ,,KARNATAKA
+1067, current / ongoing  ,,MAHARASHTRA
+1068, current / ongoing  ,,UTTAR PRADESH
+1069, completed - requirements ended  ,,TELANGANA
+1070, completed - requirements ended  ,,MADHYA PRADESH
+1071, Proposal - Closed  ,,WEST BENGAL
+1072, completed - things went wrong  ,,MAHARASHTRA
+1073, completed - requirements ended  ,,MAHARASHTRA
+1074, terminated  ,,MAHARASHTRA
+1075, completed - requirements ended  ,,TAMIL NADU
+1076, completed - requirements ended  ,,TELANGANA
+1077, completed - requirements ended  ,,TELANGANA
+1078, completed - sustainable  ,,ANDHRA PRADESH
+1079, rejected  ,,WEST BENGAL
+1080, completed - requirements ended  ,,MADHYA PRADESH
+1081, completed - sustainable  ,,DELHI
+1082, current / ongoing  ,,DELHI
+1084, completed - requirements ended  ,,DELHI
+1085, completed - requirements ended  ,,MAHARASHTRA
+1086, completed - requirements ended  ,,MAHARASHTRA
+1087, completed - requirements ended  ,,MAHARASHTRA
+1088, completed - requirements ended  ,,ANDHRA PRADESH
+1089, completed - sustainable  ,,TAMIL NADU
+1090, completed - sustainable  ,,KARNATAKA
+1091, completed - requirements ended  ,,TAMIL NADU
+1092, Support ended.  ,,KERALA
+1093, completed - requirements ended  ,,ANDHRA PRADESH
+1094, completed - requirements ended  ,,UTTAR PRADESH
+1095, current / ongoing  ,,KARNATAKA
+1097, completed - requirements ended  ,,ANDHRA PRADESH
+1098, completed - requirements ended  ,,ANDHRA PRADESH
+1099, completed - sustainable  ,,WEST BENGAL
+1100, completed - requirements ended  ,,DELHI
+1102, current / ongoing  ,,DELHI
+1103, completed - requirements ended  ,,WEST BENGAL
+1104, completed - things went wrong  ,,TELANGANA
+1105, completed - requirements ended  ,,JHARKHAND
+1106, completed - requirements ended  ,,TAMIL NADU
+1107, current / ongoing  ,,MAHARASHTRA
+1108, completed - requirements ended  ,,WEST BENGAL
+1109, current / ongoing  ,,ANDHRA PRADESH
+1112, completed - sustainable  ,,KARNATAKA
+1113, completed - requirements ended  ,,KARNATAKA
+1120, completed - requirements ended  ,,KARNATAKA
+1121, completed - requirements ended  ,,WEST BENGAL
+1122, current / ongoing  ,,TAMIL NADU
+1123, completed - requirements ended  ,,WEST BENGAL
+1125, completed - requirements ended  ,,WEST BENGAL
+1127, completed - requirements ended  ,,WEST BENGAL
+1128, current / ongoing  ,,TAMIL NADU
+1129, completed - requirements ended  ,,MAHARASHTRA
+1130, current / ongoing  ,,TELANGANA
+1131, completed - requirements ended  ,,ODISHA
+1133, completed - requirements ended  ,,MAHARASHTRA
+1134, completed - requirements ended  ,,MAHARASHTRA
+1135, completed - requirements ended  ,,RAJASTHAN
+1137, completed - requirements ended  ,,MANIPUR
+1138, current / ongoing  ,,BIHAR
+1139, rejected  ,,ANDHRA PRADESH
+1140, completed - requirements ended  ,,MAHARASHTRA
+1141, completed - requirements ended  ,,WEST BENGAL
+1142, current / ongoing  ,,TAMIL NADU
+1143, current / ongoing  ,,DELHI
+1144, completed - things went wrong  ,,ODISHA
+1145, completed - requirements ended  ,,TAMIL NADU
+1147, completed - requirements ended  ,,TELANGANA
+1151, completed - requirements ended  ,,KARNATAKA
+1153, current / ongoing  ,,WEST BENGAL
+1155, current / ongoing  ,,ANDHRA PRADESH
+1156, proposal-evaluation by chapter  ,,ANDHRA PRADESH
+1158, completed - requirements ended  ,,TAMIL NADU
+1160, current / ongoing  ,,TAMIL NADU
+1161, current / ongoing  ,,TAMIL NADU
+1162, completed - requirements ended  ,,TAMIL NADU
+1163, completed - requirements ended  ,,DELHI
+1164, completed - requirements ended  ,,MAHARASHTRA
+1173, completed - requirements ended  ,,MAHARASHTRA
+1174, Support ended.  ,,MAHARASHTRA
+1175, current / ongoing  ,,TAMIL NADU
+1176, completed - things went wrong  ,,TELANGANA
+1178, current / ongoing  ,,TAMIL NADU
+1180, completed - sustainable  ,,TELANGANA
+1181, completed - requirements ended  ,,WEST BENGAL
+1184, current / ongoing  ,,TAMIL NADU
+1185, completed - requirements ended  ,,UTTAR PRADESH
+1186, completed - requirements ended  ,,UTTAR PRADESH
+1187, current / ongoing  ,,WEST BENGAL
+1188, current / ongoing  ,,ANDHRA PRADESH
+1189, completed - requirements ended  ,,GUJARAT
+1190, current / ongoing  ,,JHARKHAND
+1193, current / ongoing  ,,TELANGANA
+1194, completed - things went wrong  ,,KERALA
+1196, current / ongoing  ,,ODISHA
+1197, completed - requirements ended  ,,TAMIL NADU
+1198, completed - things went wrong  ,,TELANGANA
+1199, completed - requirements ended  ,,TAMIL NADU
+1200, completed - sustainable  ,,ANDHRA PRADESH
+1201, completed - requirements ended  ,,ANDHRA PRADESH
+1204, current / ongoing  ,,KERALA
+1206, completed - requirements ended  ,,MAHARASHTRA
+1209, completed - requirements ended  ,,MADHYA PRADESH
+1210, completed - requirements ended  ,,ANDHRA PRADESH
+1211, current / ongoing  ,,TELANGANA
+1212, completed - requirements ended  ,,MAHARASHTRA
+1213, current / ongoing  ,,DELHI
+1214, current / ongoing  ,,ASSAM
+1215, current / ongoing  ,,MAHARASHTRA
+1216, current / ongoing  ,,UTTAR PRADESH
+1217, completed - requirements ended  ,,BIHAR
+1218, completed - things went wrong  ,,TAMIL NADU
+1220, completed - sustainable  ,,KARNATAKA
+1221, completed - requirements ended  ,,NAGALAND
+1222, completed - requirements ended  ,,UTTAR PRADESH
+1223, completed - sustainable  ,,MAHARASHTRA
+1226, current / ongoing  ,,WEST BENGAL
+1228, current / ongoing  ,,TAMIL NADU
+1230, current / ongoing  ,,WEST BENGAL
+1231, completed - requirements ended  ,,TAMIL NADU
+1233, completed - sustainable  ,,TAMIL NADU
+1234, current / ongoing  ,,TAMIL NADU
+1235, completed - requirements ended  ,,TAMIL NADU
+1236, completed - sustainable  ,,DELHI
+1237, current / ongoing  ,,RAJASTHAN
+1238, completed - sustainable  ,,KARNATAKA
+1240, completed - requirements ended  ,,TAMIL NADU
+1241, current / ongoing  ,,TELANGANA
+1242, completed - requirements ended  ,,DELHI
+1243, current / ongoing  ,,ANDHRA PRADESH
+1244, completed - requirements ended  ,,TAMIL NADU
+1245, completed - sustainable  ,,TAMIL NADU
+1246, current / ongoing  ,,TAMIL NADU
+1248, current / ongoing  ,,ANDHRA PRADESH
+1250, completed - requirements ended  ,,KARNATAKA
+1251, current / ongoing  ,,WEST BENGAL
+1252, current / ongoing  ,,WEST BENGAL
+1253, completed - requirements ended  ,,TELANGANA
+1255, Support ended.  ,,BIHAR
+1256, current / ongoing  ,,GUJARAT
+1257, current / ongoing  ,,TAMIL NADU
+1259, completed - requirements ended  ,,TAMIL NADU
+1260, completed - requirements ended  ,,TELANGANA
+1261, current / ongoing  ,,TAMIL NADU
+1262, current / ongoing  ,,KARNATAKA
+1263, Proposal - Closed  ,,WEST BENGAL
+1264, completed - sustainable  ,,WEST BENGAL
+1265, completed - requirements ended  ,,KARNATAKA
+1266, completed - sustainable  ,,TAMIL NADU
+1267, terminated  ,,DELHI
+1268, current / ongoing  ,,WEST BENGAL
+1269, current / ongoing  ,,UTTAR PRADESH
+1270, current / ongoing  ,,UTTAR PRADESH
+1271, current / ongoing  ,,UTTAR PRADESH
+1272, current / ongoing  ,,TAMIL NADU
+1274, completed - requirements ended  ,,MAHARASHTRA
+1275, completed - sustainable  ,,NAGALAND
+1276, current / ongoing  ,,WEST BENGAL
+1277, completed - sustainable  ,,BIHAR
+1278, completed - requirements ended  ,,KARNATAKA
+1279, completed - requirements ended  ,,KARNATAKA
+1280, completed - requirements ended  ,,KARNATAKA
+1281, completed - requirements ended  ,,MAHARASHTRA
+1282, proposal - received  ,,GUJARAT
+1283, completed - requirements ended  ,,KARNATAKA
+1284, completed - sustainable  ,,TELANGANA
+1285, current / ongoing  ,,DELHI
+1286, current / ongoing  ,,UTTAR PRADESH
+1287, completed - requirements ended  ,,RAJASTHAN
+1288, current / ongoing  ,,UTTAR PRADESH
+1289, completed - requirements ended  ,,UTTAR PRADESH
+1290, current / ongoing  ,,ANDHRA PRADESH
+1291, current / ongoing  ,,TELANGANA
+1292, completed - requirements ended  ,,MAHARASHTRA
+1293, completed - requirements ended  ,,KARNATAKA
+1294, current / ongoing  ,,ODISHA
+1295, completed - requirements ended  ,,MAHARASHTRA
+1296, completed - requirements ended  ,,MAHARASHTRA
+1297, current / ongoing  ,,PUDUCHERRY
+1298, completed - sustainable  ,,ANDHRA PRADESH
+1299, Proposal - Closed  ,,TAMIL NADU
+1300, completed - requirements ended  ,,KARNATAKA
+1301, completed - requirements ended  ,,UTTAR PRADESH
+1302, current / ongoing  ,,TELANGANA
+1303, completed - sustainable  ,,MAHARASHTRA
+1304, current / ongoing  ,,MAHARASHTRA
+1305, completed - requirements ended  ,,UTTAR PRADESH
+1306, completed - sustainable  ,,MADHYA PRADESH
+1307, current / ongoing  ,,KARNATAKA
+1308, completed - requirements ended  ,,ASSAM
+1309, current / ongoing  ,,ANDHRA PRADESH
+1310, current / ongoing  ,,MAHARASHTRA
+1311, current / ongoing  ,,MAHARASHTRA
+1312, current / ongoing  ,,TAMIL NADU
+1313, current / ongoing  ,,TAMIL NADU
+1314, current / ongoing  ,,GUJARAT
+1315, completed - requirements ended  ,,KARNATAKA
+1316, completed - sustainable  ,,MAHARASHTRA
+1317, current / ongoing  ,,MAHARASHTRA
+1318, current / ongoing  ,,WEST BENGAL
+1319, current / ongoing  ,,UTTAR PRADESH
+1320, current / ongoing  ,,CHHATTISGARH
+1321, current / ongoing  ,,MAHARASHTRA
+1322, current / ongoing  ,,DELHI
+1323, completed - sustainable  ,,UTTAR PRADESH
+1324, current / ongoing  ,,TAMIL NADU
+1325, current / ongoing  ,,WEST BENGAL
+1326, completed - sustainable  ,,TAMIL NADU
+1327, current / ongoing  ,,ANDHRA PRADESH
+1328, completed - things went wrong  ,,ANDHRA PRADESH
+1329, completed - requirements ended  ,,ASSAM
+1330, current / ongoing  ,,BIHAR
+1331, current / ongoing  ,,GUJARAT
+1332, current / ongoing  ,,MADHYA PRADESH
+1333, current / ongoing  ,,GUJARAT
+1334, current / ongoing  ,,TAMIL NADU
+1335, current / ongoing  ,,WEST BENGAL
+1336, current / ongoing  ,,CHHATTISGARH
+1337, current / ongoing  ,,MAHARASHTRA
+1338, completed - requirements ended  ,,JHARKHAND
+1339, completed - requirements ended  ,,BIHAR
+1340, current / ongoing  ,,UTTAR PRADESH
+1341, current / ongoing  ,,TAMIL NADU
+1342, current / ongoing  ,,UTTAR PRADESH
+1343, current / ongoing  ,,CHHATTISGARH
+1344, current / ongoing  ,,MADHYA PRADESH
+1345, current / ongoing  ,,WEST BENGAL
+1346, current / ongoing  ,,TAMIL NADU
+1347, current / ongoing  ,,TAMIL NADU
+1348, current / ongoing  ,,RAJASTHAN
+1349, current / ongoing  ,,KERALA
+1350, current / ongoing  ,,TAMIL NADU
+1351, current / ongoing  ,,WEST BENGAL
+1352, current / ongoing  ,,ASSAM
+1353, current / ongoing  ,,WEST BENGAL

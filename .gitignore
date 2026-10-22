@@ -1,0 +1,6 @@
+*/.env
+*__pycache__/*
+Download/__pycache__/*
+discussion.txt
+Download/HTML_DATA/*html
+
